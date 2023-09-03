@@ -1,0 +1,128 @@
+@media (max-width:1190px){
+
+	nav .navbar .links li{
+		padding: 0 10px;
+	}
+}
+@media (max-width:1098px){
+
+	nav .navbar .links li{
+		padding: 0 6px;
+	}
+}
+@media (max-width:998px){
+
+	nav .navbar .links li{
+		padding: 0 2px;
+	}
+}
+@media (max-width:1516px){
+	.body_top_leftt {
+	    width: 70%;
+	}
+	.news_column img {
+	    width: 250px;
+	    margin-right: 15px;
+	}
+	.body_top_left_1 img{
+		width: 100%;
+		height: auto;
+	}
+	.body_top_right {
+		width: 29%;
+	}
+}
+@media (max-width:1247px){
+	.news_column img {
+	    width: 200px;
+	    margin-right: 15px;
+	}
+	.body_top_left_11, .body_top_left_12, .body_top_left_13 {
+		display: block !important;
+	}
+	.body_top_left_14{
+		display: block !important;
+	}
+}
+@media (max-width:999px){
+	.middle{
+		display: block !important;
+	}
+	.body_top_leftt{
+		width: 100%;
+	}
+	.body_top_right{
+		width: 100%;
+	}
+	.body_top_left{
+		display: block !important;
+		width: 100%;
+	}
+	.body_top_left_11_text, .body_top_left_12_text, .body_top_left_13_text, .body_top_left_14_text {
+	    margin-bottom: 20px;
+	    margin-left: 20px;
+	}
+	.body_top_left{
+		padding-bottom: 20px;
+	}
+	.bannners,
+	.body_top_right_3 img,
+	.body_top_right_4 img,
+	.body_top_right_1 img {
+	    margin-left: 20px;
+	    text-align: center;
+	    margin: auto;
+	    display: block;
+	    margin-top: 20px;
+	}
+	.body_top_right{
+		border-left: none;
+	}
+	.news_column{
+		display: block;
+	}
+	.news_clumn_2,
+	.news_clumn_1{
+		border-right: unset;
+	}
+	.news_column img {
+		width: 100%;
+	}
+	.SPSecTitle2 ul {
+		margin-top: 20px
+	}
+	.DVideoList .col-lg-3, .DVideoList .col-lg-6, .DVideoList .col-lg-8{
+		width: 100%;
+	}
+	.border-right-inner1{
+		border-right: unset;
+	}
+	.col-lg-4{
+		width: 100%;
+	}
+	.col-lg-6{
+		width: 100%;
+	}
+	.Desc{
+		margin-bottom: 30px
+	}
+	.col-lg-3{
+		width: 100%;
+	}
+	.coll-7{
+		margin-left: 20px !important;
+		width: 90%;
+	}
+	.footer_contact,
+	.footer_logo{
+		border-right: unset;
+		width: 100%;
+		margin-bottom: 20px
+	}
+	.footer_contact{
+		margin-left: 20px;
+		margin-top: 20px
+	}
+
+
+

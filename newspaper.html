@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Newspaper</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+
+<!-- 	font cdn link -->
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.2/css/font-awesome.min.css" integrity="sha512-YgECeaX64EiXmgxPQZ88zsywLJBLNfuY1IpQiR6OXyLpEgLPXZq2JnfnTaHaAZ+1ADF3PzI2I8ma/ixR1jJUMg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css"/>
+
+</head>
+<style>
+	.slick-slide img{
+		width: 95%;
+	}
+	.slick-prev {
+  left: -20px;
+  color: red;
+  background: red;
+}
+.slick-next {
+  left: px;
+  color: red;
+  background: red;
+  right: -10px;
+}
+.slick-next, .slick-prev {
+  font-size: 0;
+  line-height: 0;
+  top: 40%;
+  width: 20px;
+ 
+ height: 20px;
+ }
+ .slick-next::before, .slick-prev::before{
+ 	background: red;
+ }
+</style>
+<body>
+	<!--header area part start-->
+	<header class="N_header">
+		<div class="mid">
+			<!-- header top part -->
+			<div class="N_header_top">
+				<div class="N_header_top_left">
+					<p> <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>ঢাকা  
+						<span><i class="fa fa-archive" aria-hidden="true"></i></span> বুধবার , ২৩ আগস্ট ২০২৩, ৮ ভাদ্র ১৪৩০, ০৬ সফর ১৪৪৫
+					</p>
+				</div>
+				<div class="N_header_top_right">
+					<div class="social_icons">
+						<ul class="social_icon">
+							<li class="fb-icon"><a href="#"><i class="fa fa-facebook" ></i></a></li>
+							<li class="yt-icon"><a href="#"><i class="fa fa-youtube-play" ></i></a></li>
+							<li class="tw-icon"><a href="#"><i class="fa fa-twitter" ></i></a></li>
+							<li class="li-icon"><a href="#"><i class="fa fa-linkedin" ></i></a></li>
+							<li class="MailIcon"><a href="#"><i class="fa fa-envelope-o" ></i></a></li>
+							<li class="LiveButton"><a href="/live"><img src="images/live2.gif" width="75" height="34" alt="Live" title="Live" class="img-fluid"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- header middle part -->
+			<div class="N_header_middle">
+				<div class="N_logo">
+					<img src="images/logo.png" alt="logo">
+				</div>
+				<div class="N_banner">
+					<img src="images/11083447500151848486.jpg" alt="banner">
+				</div>
+			</div>
+			<!-- header bottom part -->
+			<div class="N_header_bottom sticky">
+				<nav>
+				    <div class="navbar">
+				      <i class='bx bx-menu'></i>
+				      <div class="logo"><img src="images/favicon.ico" alt=""></div>
+				      <div class="nav-links">
+				        <div class="sidebar-logo">
+				          <span class="logo-name"></span> 
+				          <i class='bx bx-x' ></i>
+				        </div>
+				        <ul class="links">
+				          <li><a href="#">প্রচ্ছদ</a></li>
+				          <li><a href="#">জাতীয়</a></li>
+				          <li>
+				            <a href="#">রাজনীতি</a>
+				            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+				            <ul class="htmlCss-sub-menu sub-menu">
+				              <li><a href="#">আওয়ামী লীগ</a></li>
+				              <li><a href="#">বিএনপি</a></li>
+				              <li><a href="#">অন্যান্য</a></li>
+				            </ul>
+				          </li>
+				          <li>
+				            <a href="#">আন্তর্জাতিক</a>
+				            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+				            <ul class="js-sub-menu sub-menu">
+				              <li><a href="#">আমেরিকা </a></li>
+				              <li><a href="#">ইউরোপ</a></li>
+				              <li><a href="#">অস্ট্রেলিয়া</a></li>
+				              <li><a href="#">এশিয়া</a></li>  
+				              <li><a href="#"> আফ্রিকা </a></li>  
+				              <li><a href="#"> মধ্যপ্রাচ্য </a></li>  
+				            </ul>
+				          </li>
+				          <li>
+				            <a href="#">অর্থনীতি</a>
+				            <i class='bx bxs-chevron-down js-arrrow arrow '></i>
+				            <ul class="jss-sub-menu sub-menu">
+				              <li><a href="#">কর্পোরেট</a></li>
+				            </ul>
+				          </li>
+				          <li>
+				            <a href="#">খেলা</a>
+				            <i class='bx bxs-chevron-down   mrore-arrow arrow '></i>
+				            <ul class="js-ssub-menu sub-menu">
+				              <li><a href="#">ক্রিকেট</a></li>
+				              <li><a href="#">ফুটবল</a></li>
+				              <li><a href="#">অন্যান্য</a></li>
+				            </ul>
+				          </li>
+				          <li><a href="#">বিনোদন</a></li>
+				          <li>
+				            <a href="#">সারাদেশ</a>
+				            <i class='bx bxs-chevron-down  hhtmlcss-arrow arrow '></i>
+				            <ul class="js-sub-mmenu sub-menu">
+				              <li><a href="#">ঢাকা</a></li>
+				              <li><a href="#">চট্টগ্রাম</a></li>
+				              <li><a href="#">বরিশাল</a></li>
+				              <li><a href="#">খুলনা</a></li>
+				              <li><a href="#">রাজশাহী</a></li>
+				              <li><a href="#">সিলেট</a></li>
+				              <li><a href="#">রংপুর</a></li>
+				              <li><a href="#">ময়মনসিংহ</a></li>
+				            </ul>
+				          </li>
+				          <li><a href="#">লাইফস্টাইল</a></li>
+				          <li><a href="#">ছবির গল্প</a></li>
+				          <li><a href="#">ভিডিও গ্যালারি</a></li>
+				          <li class="menu-item-has-children"><a href="#">সব <span><i class="fa fa-bars arrow"></i></span></a>
+				          	<div class="sub-menus mega-menu mega-menu-column-4 " >
+                        <div class="list-item">
+                          <ul >
+                            <li><a href="#">জাতীয়</a></li>
+                            <li><a href="#">রাজনীতি</a></li>
+                            <li><a href="#">অর্থনীতি</a></li>
+                             <li><a href="#">খেলা</a></li>
+                             <li><a href="#">প্রবাস</a></li>
+                             <li><a href="#">খোলা জানালা</a></li>
+                          </ul>
+                        </div>
+                        <div class="list-item">
+                          <ul>
+                            <li><a href="#">বিনোদন</a></li>
+                            <li><a href="#">আন্তর্জাতিক</a></li>
+                            <li><a href="#">সারাদেশ</a></li>
+                            <li><a href="#">শিল্প-সাহিত্য</a></li>
+                            <li><a href="#">অপরাধ</a></li>
+                            <li><a href="#">কৃষি</a></li>
+                          </ul>
+                        </div>
+                        <div class="list-item">
+                          <ul>
+                            <li><a href="#">আইন-বিচার</a></li>
+                            <li><a href="#">লাইফস্টাইল</a></li>
+                            <li><a href="#">তথ্য প্রযুক্তি</a></li>
+                            <li><a href="#">স্বাস্থ্য</a></li>
+                            <li><a href="#">Channel24 Campus</a></li>
+                            <li><a href="#">Vacation-এ তোমার সনে</a></li>
+                          </ul>
+                        </div>
+                        <div class="list-item">
+                          <ul>
+                            <li><a href="#">চাকরি</a></li>
+                            <li><a href="#">ধর্ম</a></li>
+                            <li><a href="#">ফিচার</a></li>
+                            <li><a href="#">মতামত</a></li>
+                            <li><a href="#">24 Press Release</a></li>
+                          </ul>
+                        </div>
+                        <div class="list-item">
+                          <ul>
+                            <li><a href="#">শিক্ষা</a></li>
+                            <li><a href="#">আবহাওয়া</a></li>
+                            <li><a href="#">রাজধানী</a></li>
+                            <li><a href="#">মানবিক আবেদন</a></li>
+                            <li><a href="#">কর্পোরেট</a></li>
+                          </ul>
+                        </div>
+                        <div class="list-item">
+                          <ul>
+                            <li><a href="#">আর্কাইভস</a></li>
+                            <li><a href="#">সাক্ষাৎকার</a></li>
+                            <li><a href="#">চট্টগ্রাম 24</a></li>
+                            <li><a href="#">চ্যানেল 24 স্পেশাল</a></li>
+                            <li><a href="#">এক ক্লিকে বাংলাদেশ</a></li>
+                          </ul>
+                        </div>
+                      </div>
+				          </li>
+				        </ul>
+				      </div>
+				      <div class="search-box">
+				        <i class='bx bx-search'></i>
+				        <div class="input-box">
+				          <input type="text" placeholder="Search...">
+				        </div>
+				      </div>
+				    </div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!--header area part end-->
+
+	<!-- body top area start here -->
+		<section class="body_top OnlinePoll">
+			<div class="middle">
+				<div class="body_top_leftt">
+					<div class="body_top_left">
+						<div class="body_top_left_1">
+							<img src="images/gg.png" alt="video">
+							<h1>ডেঙ্গুর মারাত্মক ধরণ এনসেফালাইটিস, বিকল করে দিতে পারে মস্তিষ্কের কার্যক্ষমতা (ভিডিও)</h1>
+							<p> আপডেট ২৬ আগস্ট ২০২৩, ২০:৫৫</p>
+						</div>
+						<div class="body_top_left_2">
+							<div class="body_top_left_11">
+								<!-- <div class="body_top_left_11_img">
+									
+								</div> -->
+								<img src="images/1.png" alt="">
+								<div class="body_top_left_11_text">
+									<h3>ঢাকার পথে প্রধানমন্ত্রী</h3>
+									<p> আপডেট ২৬ আগস্ট ২০২৩, ২০:৫১</p>
+								</div>
+							</div>
+							<div class="body_top_left_12">
+								<!-- <div class="body_top_left_12_img">
+									
+								</div> -->
+								<img src="images/2.png" alt="">
+								<div class="body_top_left_12_text">
+									<h3>সেই মুশতাককে বহিস্কার করেছে <br>আইডিয়াল স্কুলের গভর্নিং বডি</h3>
+									<p>আপডেট ২৬ আগস্ট ২০২৩, ১৮:৪৭</p>
+								</div>
+							</div>
+							<div class="body_top_left_13">
+								<!-- <div class="body_top_left_13_img">
+									
+								</div> -->
+								<img src="images/4.png" alt="">
+								<div class="body_top_left_13_text">
+									<h3>খুলনা অঞ্চলে চিংড়ি রপ্তানিতে<br> আয় কমেছে ১৪০ কোটি টাকা</h3>
+									<p>আপডেট ২৬ আগস্ট ২০২৩, ২০:৪৯</p>
+								</div>
+							</div>
+							<div class="body_top_left_14">
+								<!-- <div class="body_top_left_14_img">
+									
+								</div> -->
+								<img src="images/3.jpg" alt="">
+								<div class="body_top_left_14_text">
+									<h3>তিস্তার পানি বিপৎসীমার ৪৭ সে.মি <br>ওপরে, স্রোতে ভেসে গেল স্পার বাঁধ</h3>
+									<p> আপডেট ২৬ আগস্ট ২০২৩, ২২:৩৪</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="news_column">
+						<div class="news_clumn_1">
+							<div class="column_1">
+								<a href="#">
+									<img src="images/11.png" alt="">
+								<h4>সিন্ডিকেটের কথা শুনে প্রধানমন্ত্রী বললেন ‘আমি বাণিজ্যমন্ত্রীকে ধরব তো’</h4>
+								<p>‘নিত্যপ্রয়োজনীয় পণ্যের সিন্ডিকেটে হাত দেয়া যাবে না’ এমন কথা বাণিজ্যমন্ত্রী বলে থাকলে, তাকে....</p>
+								</a>
+							</div>
+							<div class="column_2">
+								<a href="#">
+									<img src="images/21.png" alt="">
+								<h4>জ্বর কমেছে লিটনের, কবে যাবেন শ্রীলঙ্কায়</h4>
+								<p>২৪ ঘণ্টারও কম সময়ের মধ্যে পর্দা উঠবে এশিয়া কাপের। বাংলাদেশ দলও প্রস্তুত নিজেদের প্রথম....</p>
+								</a>
+							</div>
+						</div>
+						<div class="news_clumn_2">
+							<div class="column_1">
+								<a href="#">
+									<img src="images/13.png" alt="">
+								<h4>‘ড. ইউনুস এবং তার বন্ধুরা অর্থ খরচ করে বাংলাদেশকে নিয়ে অপপ্রচার চালাচ্ছেন’</h4>
+								<p>ড. ইউনুস এবং তার বন্ধুরা এখনও অর্থ খরচ করে বাংলাদেশকে নিয়ে অপপ্রচার চালাচ্ছেন বলে...</p>
+								</a>
+							</div>
+							<div class="column_2">
+								<a href="#">
+									<img src="images/33.jpg" alt="">
+								<h4>চীনের নতুন মানচিত্রে যুক্ত হলো ভারতের অরুণাচল প্রদেশ</h4>
+								<p>চীনের প্রকাশিত নতুন মানচিত্রে ভারতের গোটা অরুণাচল প্রদেশকে ঢোকানো হয়েছে। সেই সঙ্গে....</p>
+								</a>
+							</div>
+						</div>
+						<div class="news_clumn_3">
+							<div class="column_1">
+								<a href="#">
+									<img src="images/12.png" alt="">
+								<h4>রাজনৈতিক কারণে সংবিধানকে কলুষিত করা ঠিক হবে না: আইনমন্ত্রী</h4>
+								<p>বিএনপির ভারপ্রাপ্ত চেয়ারম্যান তারেক রহমানের সাম্প্রতিক দেওয়া সব বক্তব্য অনলাইন থেকে....</p>
+								</a>
+							</div>
+							<div class="column_2">
+								<a href="#">
+									<img src="images/14.jpg" alt="">
+								<h4>দাম কমলে ডিম সেদ্ধ করে ফ্রিজে রেখে দেবেন : প্রধানমন্ত্রী</h4>
+								<p>প্রধানমন্ত্রী শেখ হাসিনা বলেছেন, দেশের বাজারে ডিমের দাম যখন কমবে, তখন ডিম সেদ্ধ করে ফ্রিজে....</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="body_top_right">
+					<div class="body_top_right_1">
+						<img src="images/GKLV-300x250.gif" alt="">
+					</div>
+					<div class="body_top_right_2">
+						<div class="top_news_heading">
+							<div class="heading_1"><h4><a href="#">সর্বশেষ</a></h4></div>
+							<div class="heading_2"><a href="#">সর্বাধিকপঠিত</a></div>
+						</div>
+						<div class="top_news">
+							<div class="top_news_1">
+								<div class="top_news_cont">
+	                  <a href="#">
+	                    <div class="d-flex flex-row">
+	                      <span class="h-100 align-items-center">১</span>
+	                        <p>এক সপ্তাহ কারাভোগের পর জামিনে মুক্ত সেই প্রবাসীর মা</p>
+	                    </div>
+	                  </a>
+	              </div>
+	              <div class="top_news_cont">
+	                  <a href="#">
+	                    <div class="d-flex flex-row">
+	                      <span class="h-100 align-items-center">২</span>
+	                      <p>ডেঙ্গু হলে বেশি বেশি স্যালাইন, ডাবের পানি ও ডিম খেতে হবে : ডা. আশরাফ</p>
+	                    </div>
+	                  </a>
+	              </div>
+	              <div class="top_news_cont">
+	                  <a href="#">
+	                    <div class="d-flex flex-row">
+	                      <span class="h-100 align-items-center">3</span>
+	                      <p>ফেইক আইডি দিয়ে ছড়ানো হচ্ছে মিথ্যা তথ্য: শামা ওবায়েদ</p>
+	                    </div>
+	                  </a>
+	              </div>
+	              <div class="top_news_cont">
+	                  <a href="#">
+	                    <div class="d-flex flex-row">
+	                      <span class="h-100 align-items-center">4</span>
+	                      <p>নিকলীর আলম রিসোর্টে তরুণীকে ধর্ষণ, দুই অভিযুক্ত কারাগারে</p>
+	                    </div>
+	                  </a>
+	              </div>
+	              <div class="top_news_cont">
+	                  <a href="#">
+	                    <div class="d-flex flex-row">
+	                      <span class="h-100 align-items-center">5</span>
+	                      <p>বাংলাদেশের ওপর যুক্তরাষ্ট্রের বাড়তি চাপ, সুযোগ নিতে পারে চীন</p>
+	                    </div>
+	                  </a>
+	              </div>
+	              <div class="top_news_cont">
+	                  <a href="#">
+	                    <div class="d-flex flex-row">
+	                      <span class="h-100 align-items-center">6</span>
+	                      <p>আগের দিন জাল নিয়ে বিলে গেছেন, পরের দিন পাওয়া গেল মরদেহ</p>
+	                    </div>
+	                  </a>
+	              </div>
+	              <div class="top_news_cont">
+	                  <a href="#">
+	                    <div class="d-flex flex-row">
+	                      <span class="h-100 align-items-center">7</span>
+	                      <p>সংবিধান অনুযায়ী নির্বাচন হবে : অ্যাটর্নি জেনারেল</p>
+	                    </div>
+	                  </a>
+	              </div>
+	              <div class="top_news_cont">
+	                  <a href="#">
+	                    <div class="d-flex flex-row">
+	                      <span class="h-100 align-items-center">8</span>
+	                      <p>ছোট ভাইয়ের পাথরের আঘাতে বড় ভাই খুন, আটক ১</p>
+	                    </div>
+	                  </a>
+	              </div>
+	              <div class="top_news_cont">
+	                  <a href="#">
+	                    <div class="d-flex flex-row">
+	                      <span class="h-100 align-items-center">9</span>
+	                      <p>অধিনায়কত্ব ছাড়ার মূল কারণ জানালেন তামিম</p>
+	                    </div>
+	                  </a>
+	              </div>
+	              <div class="top_news_cont">
+	                  <a href="#">
+	                    <div class="d-flex flex-row">
+	                      <span class="h-100 align-items-center">10</span>
+	                      <p>রাত ১টার মধ্যে যেসব জেলায় বৃষ্টি হতে পারে</p>
+	                    </div>
+	                  </a>
+	              </div>
+							</div>
+							<div class="top_news_2">
+								<div class="top_news_contt">
+	                  <a href="#">
+	                    <div class="d-flex flex-row">
+	                      <span class="h-100 align-items-center">1</span>
+	                      <p>কোন পেশার মানুষেরা পরকীয়ায় বেশি জড়ান? কী বলছে সমীক্ষা</p>
+	                    </div>
+	                  </a>
+	              </div>
+	              <div class="top_news_contt">
+	                  <a href="#">
+	                    <div class="d-flex flex-row">
+	                      <span class="h-100 align-items-center">2</span>
+	                      <p>সিঙ্গাপুরের উদ্দেশ্যে পরিবারসহ ঢাকা ছাড়লেন মির্জা ফখরুল</p>
+	                    </div>
+	                  </a>
+	              </div>
+	              <div class="top_news_contt">
+	                  <a href="#">
+	                    <div class="d-flex flex-row">
+	                      <span class="h-100 align-items-center">3</span>
+	                      <p>মানবাধিকার লঙ্ঘন: রাশিয়ার ২ প্রতিষ্ঠান ও ১১ ব্যক্তির ওপর যুক্তরাষ্ট্রের নিষেধাজ্ঞা</p>
+	                    </div>
+	                  </a>
+	              </div>
+	              <div class="top_news_contt">
+	                  <a href="#">
+	                    <div class="d-flex flex-row">
+	                      <span class="h-100 align-items-center">4</span>
+	                       <p>জায়েদ খানকে পুরস্কার দেয়া আইপিপিডিয়ারের পক্ষ থেকে আইনি নোটিশ</p>
+	                    </div>
+	                  </a>
+	              </div>
+	              <div class="top_news_contt">
+	                  <a href="#">
+	                    <div class="d-flex flex-row">
+	                      <span class="h-100 align-items-center">5</span>
+	                      <p>বিয়ে করে সব হারালেন মুশতাক</p>
+	                    </div>
+	                  </a>
+	              </div>
+	              <div class="top_news_contt">
+	                  <a href="#">
+	                    <div class="d-flex flex-row">
+	                      <span class="h-100 align-items-center">6</span>
+	                      <p>সাকিবের ‘রহস্যময়’ সেই স্ট্যাটাসের কারণ তাহলে এটি?</p>
+	                    </div>
+	                  </a>
+	              </div>
+	              <div class="top_news_contt">
+	                  <a href="#">
+	                    <div class="d-flex flex-row">
+	                      <span class="h-100 align-items-center">7</span>
+	                      <p>আলহামদুলিল্লাহ, আমার জীবনের সেরা দিন: রিয়াদ</p>
+	                    </div>
+	                  </a>
+	              </div>
+	              <div class="top_news_contt">
+	                  <a href="#">
+	                    <div class="d-flex flex-row">
+	                      <span class="h-100 align-items-center">8</span>
+	                       <p>অব্যাহতি পাওয়ার পর ছাত্রলীগ নেতা ফেসবুকে লিখলেন ‘আলহামদুলিল্লাহ’</p>
+	                    </div>
+	                  </a>
+	              </div>
+	              <div class="top_news_contt">
+	                  <a href="#">
+	                    <div class="d-flex flex-row">
+	                      <span class="h-100 align-items-center">9</span>
+	                       <p>ডক্টর ইউনূসকে যুক্তরাষ্ট্রের সাবেক প্রেসিডেন্ট বারাক ওবামার চিঠি</p>
+	                    </div>
+	                  </a>
+	              </div>
+	              <div class="top_news_contt">
+	                  <a href="#">
+	                    <div class="d-flex flex-row">
+	                      <span class="h-100 align-items-center">10</span>
+	                      <p>ফিফা র&zwj;্যাঙ্কিংয়ের শীর্ষে সুইডেন, কোথায় ব্রাজিল-আর্জেন্টিনা</p>
+	                    </div>
+	                  </a>
+	              </div>
+							</div>
+						</div>
+						<div class="top_news_bottom">
+							<p><a href="#">সব খবর <span><i class="fa fa-angle-double-right" ></i></span></a></p>
+						</div>
+					</div>
+					<div class="body_top_right_3">
+						<img src="images/8.jpg" alt="">
+					</div>
+					<div class="body_top_right_4">
+						<img src="images/Sun-Optimized.gif" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+	<!-- body top area end here -->
+	<!-- banner section start here -->
+		<section class="banners OnlinePoll">
+			<img src="images/banner-728x90.png" alt="banner">
+		</section>
+		<!-- vedio section start here -->
+		 <div class="VideoSection">
+        <div class="container">
+            <div class="SPSecTitle2 OnlinePoll">
+                <a href="#">
+                    <h2> ভিডিও <i class="fa fa-video-camera"></i></h2>
+                </a>
+                <ul class="nav nav-pills pills-dark" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link active" data-catslug="channel-24">চ্যানেল 24</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-catslug="channel-24-news">চ্যানেল 24 সংবাদ</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-catslug="search-light">সার্চলাইট</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-catslug="colors-24">কালারস 24</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-catslug="sports-24">স্পোর্টস 24</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-catslug="business-24">বিজনেস 24</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-catslug="agriculture-24">কৃষি 24</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-catslug="express-24">এক্সপ্রেস 24</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content OnlinePoll" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="চ্যানেল 24" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="DVideoList">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 rowresize" style="">
+                                <div class="DVideoList">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-sm-6 col-6 d-flex">
+                                            <div class="DVideoListItem align-self-stretch">
+                                                <a href="#">
+                                                    <div class="DImgZoomBlock">
+                                                        <picture>
+                                                            <img loading="lazy" src="images/maxresdefault.jpg" data-src="" alt="img" title="সিটি কর্পোরেশনের অবহেলায় অকালে প্রাণপ্রদীপ নিভে গেলো শিশু ইয়াছিনের | Child | Channel 24">
+                                                        </picture>
+                                                        <div class="card-video-icon transition"></div>
+                                                    </div>
+                                                    <div class="Desc">
+                                                        <h3 class="Title">সিটি কর্পোরেশনের অবহেলায় অকালে প্রাণপ্রদীপ নিভে গেলো শিশু ইয়াছিনের | Child | Channel 24</h3>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-6 col-6 d-flex">
+                                            <div class="DVideoListItem align-self-stretch">
+                                                <a href="#">
+                                                    <div class="DImgZoomBlock">
+                                                        <picture>
+                                                            <img loading="lazy" src="images/maxresdefault (1).jpg" data-src="" alt="img" title="'বিএনপি-জাতীয় পার্টির নেতারা দল বেধে সিঙ্গাপুর গিয়ে ষড়যন্ত্র করছে' | Awami League | Channel 24">
+                                                        </picture>
+                                                        <div class="card-video-icon transition"></div>
+                                                    </div>
+                                                    <div class="Desc">
+                                                        <h3 class="Title">'বিএনপি-জাতীয় পার্টির নেতারা দল বেধে সিঙ্গাপুর গিয়ে ষড়যন্ত্র করছে' | Awami League | Channel 24</h3>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-6 col-6 d-flex">
+                                            <div class="DVideoListItem align-self-stretch">
+                                                <a href="#">
+                                                    <div class="DImgZoomBlock">
+                                                        <picture>
+                                                            <img loading="lazy" src="images/maxresdefault (2).jpg" data-src=" " alt="img" title="এলডিসি পরবর্তী বাংলাদেশের রপ্তানি কমতে পারে ১৪% | MCCI | Channel 24">
+                                                        </picture>
+                                                        <div class="card-video-icon transition"></div>
+                                                    </div>
+                                                    <div class="Desc">
+                                                        <h3 class="Title">এলডিসি পরবর্তী বাংলাদেশের রপ্তানি কমতে পারে ১৪% | MCCI | Channel 24</h3>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-6 col-6 d-flex">
+                                            <div class="DVideoListItem align-self-stretch">
+                                                <a href="#">
+                                                    <div class="DImgZoomBlock">
+                                                        <picture>
+                                                            <img loading="lazy" src="images/maxresdefault (3).jpg" data-src="" alt="img " title="'ইন্ডিয়া কখনো কী বাংলাদেশের পাশে দাড়িয়েছে?' | Modi | India | Channel 24">
+                                                        </picture>
+                                                        <div class="card-video-icon transition"></div>
+                                                    </div>
+                                                    <div class="Desc">
+                                                        <h3 class="Title">'ইন্ডিয়া কখনো কী বাংলাদেশের পাশে দাড়িয়েছে?' | Modi | India | Channel 24</h3>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-6 col-6 d-flex">
+                                            <div class="DVideoListItem align-self-stretch">
+                                                <a href="#">
+                                                    <div class="DImgZoomBlock">
+                                                        <picture>
+                                                            <img loading="lazy" src="images/maxresdefault (4).jpg" data-src="" alt="img " title="চট্টগ্রামে নিখোঁজ ১৮ মাসের শিশু ইয়াছিনের ম র দে হ মিললো নালায় | Chattogram News | Channel 24">
+                                                        </picture>
+                                                        <div class="card-video-icon transition"></div>
+                                                    </div>
+                                                    <div class="Desc">
+                                                        <h3 class="Title">চট্টগ্রামে নিখোঁজ ১৮ মাসের শিশু ইয়াছিনের ম র দে হ মিললো নালায় | Chattogram News | Channel 24</h3>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-6 col-6 d-flex">
+                                            <div class="DVideoListItem align-self-stretch">
+                                                <a href="#">
+                                                    <div class="DImgZoomBlock">
+                                                        <picture>
+                                                            <img loading="lazy" src="images/maxresdefault (5).jpg" data-src="" alt="img " title="যৌতুকের জন্য গৃহবন্দী এম.এ পাস গৃহবধু! | Rangpur | Channel 24">
+                                                        </picture>
+                                                        <div class="card-video-icon transition"></div>
+                                                    </div>
+                                                    <div class="Desc">
+                                                        <h3 class="Title">যৌতুকের জন্য গৃহবন্দী এম.এ পাস গৃহবধু! | Rangpur | Channel 24</h3>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-6 col-6 d-flex">
+                                            <div class="DVideoListItem align-self-stretch">
+                                                <a href="#">
+                                                    <div class="DImgZoomBlock">
+                                                        <picture>
+                                                            <img loading="lazy" src="images/maxresdefault (6).jpg" data-src="" alt="img " title="তারেক রহমান ইস্যুতে হাইকোর্টে নজিরবিহীন হ ট্ট গোল | High Court | Tarique Rahman | Channel 24">
+                                                        </picture>
+                                                        <div class="card-video-icon transition"></div>
+                                                    </div>
+                                                    <div class="Desc">
+                                                        <h3 class="Title">তারেক রহমান ইস্যুতে হাইকোর্টে নজিরবিহীন হ ট্ট গোল | High Court | Tarique Rahman | Channel 24</h3>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-6 col-6 d-flex">
+                                            <div class="DVideoListItem align-self-stretch">
+                                                <a href="#">
+                                                    <div class="DImgZoomBlock">
+                                                        <picture>
+                                                            <img loading="lazy" src="images/maxresdefault (7).jpg" data-src="" alt="img" title="৫ ছেলে থাকার পরেও বৃদ্ধ বাবা মাকে ফেলে গেলেন কবরস্থানে | Old Couple Tangail | Channel 24">
+                                                        </picture>
+                                                        <div class="card-video-icon transition"></div>
+                                                    </div>
+                                                    <div class="Desc">
+                                                        <h3 class="Title">৫ ছেলে থাকার পরেও বৃদ্ধ বাবা মাকে ফেলে গেলেন কবরস্থানে | Old Couple Tangail | Channel 24</h3>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="btnDiv-Vdo" class="text-center mt-3">
+                                        <button id="ajax-more-btn" class="btn btn-danger btn-lg btn-block">
+                                            <a href="#">সকল ভিডিও দেখুন...</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+		<!-- vedio section end here -->
+		<!-- nationality part start -->
+		<div class="contaiiner">
+	    <section class="Country">
+	      <div class="SPSecTitle">
+	        <a title="জাতীয়" href="#">
+	          <h2><img loading="lazy" src="images/favicon.ico" alt="" width="18" height="18" class="SPSecTitleIcon">জাতীয়</h2>
+	        </a>
+	      </div>
+	      <div class="DCountry">
+	        <div class="row">
+	          <div class="col-lg-4 col-sm-12 border-right-inner1">
+	            <div class="DCountryTop card-video-part">
+	              <a href="#">
+	                <div class="row">
+	                  <div class="col-5">
+	                    <div class="DImgZoomBlock">
+	                      <picture>
+	                        <img loading="lazy" src="images/7-1693386069.jpg" data-src=" " min-width="408" min-height="256" alt="img" title="কেউ ৬০ বিঘার বেশি জমির মালিক হতে পারবে না, নতুন আইনে যা আছে">
+	                      </picture>
+	                    </div>
+	                  </div>
+	                  <div class="col-7">
+	                    <div class="Desc">
+	                      <h3 class="Title">কেউ ৬০ বিঘার বেশি জমির মালিক হতে পারবে না, নতুন আইনে যা আছে</h3>
+	                      <div class="Brief">
+	                        <p>কোনো ব্যক্তি ৬০ বিঘার বেশি জমির মালিক হতে পারবে না- এমন বিধান রেখে নতুন একটি আইনের খসড়ায় চূড়ান্ত অনুমোদন দিয়েছে মন্ত্রিসভা। ১৯৮৪ সালের এ সংক্রান্ত একটি অধ্যাদেশের ধারাগুলো হালনাগাদ করতে নতুন এই আইন করতে যাচ্ছে সরকার।</p>
+	                      </div>
+	                      <span class="newsDate"><i class="far fa-clock"></i> আপডেট ৩০ আগস্ট  ২০২৩, ১৫:০১</span>
+	                    </div>
+	                  </div>
+	                </div>
+	              </a>
+	            </div>
+	          </div>
+	          <div class="col-lg-4 col-sm-12 border-right-inner1">
+	            <div class="DCountryTop card-video-part">
+	              <a href="#">
+	                <div class="row">
+	                  <div class="col-5">
+	                    <div class="DImgZoomBlock">
+	                      <picture><img loading="lazy" src="images/39.png" data-src=" " min-width="408" min-height="256" alt=" " title="বলপূর্বক গুম তদন্তে বাংলাদেশকে জাতিসংঘের প্রস্তাব মেনে নেয়ার আহ্বান">
+	                      </picture>
+	                    </div>
+	                  </div>
+	                  <div class="col-7">
+	                    <div class="Desc">
+	                      <h3 class="Title">বলপূর্বক গুম তদন্তে বাংলাদেশকে জাতিসংঘের প্রস্তাব মেনে নেয়ার আহ্বান</h3>
+	                      <div class="Brief">
+	                        <p>বলপূর্বক গুমের শিকার ব্যক্তিদের বিষয়ে তদন্তের জন্য বাংলাদেশকে জাতিসংঘের প্রস্তাব গ্রহণ করা উচিত হবে বলে মত দিয়েছে যুক্তরাষ্ট্রভিত্তিক আন্তর্জাতিক মানবাধিকার সংস্থা হিউম্যান রাইটস ওয়াচ (এইচআরডব্লিউ)। দেশের আইন-শৃঙ্খলা রক্ষাকারী ও নিরাপত্তা বাহিনীর হাতে গুমের ঘটনার তদন্তে জাতিসংঘ প্রস্তাবিত স্বাধীন কমিশন গঠনের বিষয়টি মেনে নেওয়ার জন্য এই আহ্বান জানানো হয়েছে।</p>
+	                      </div>
+	                      <span class="newsDate"><i class="far fa-clock"></i> আপডেট ৩০ আগস্ট  ২০২৩, ১২:২৯</span>
+	                    </div>
+	                  </div>
+	                </div>
+	              </a>
+	            </div>
+	          </div>
+	          <div class="col-lg-4 col-sm-12">
+	            <div class="DCountryList">
+	              <div class="DCountryListItem">
+	                <a href="#">
+	                  <div class="DImgBlock">
+	                    <div class="DImgZoomBlock">
+	                      <picture><img loading="lazy" src="images/38.png" data-src=" " min-width="121" min-height="76" alt="img" title="শিক্ষক-দাতা সদস্যদের সঙ্গে ছাত্রীদের বিয়ে: কতটা ‘আইডিয়াল’ মতিঝিল আইডিয়াল স্কুল"></picture>
+	                    </div>
+	                  </div>
+	                  <div class="DetailsBlock">
+	                    <div class="Desc">
+	                      <h3 class="Title">শিক্ষক-দাতা সদস্যদের সঙ্গে ছাত্রীদের বিয়ে: কতটা ‘আইডিয়াল’ মতিঝিল আইডিয়াল স্কুল</h3>
+	                      <span class="newsDate"><i class="far fa-clock"></i> আপডেট ৩০ আগস্ট  ২০২৩, ১১:২৭</span>
+	                    </div>
+	                  </div>
+	                </a>
+	              </div>
+	              <div class="DCountryListItem">
+	                <a href="#">
+	                  <div class="DImgBlock">
+	                    <div class="DImgZoomBlock">
+	                      <picture><img loading="lazy" src="images/55.png" data-src="" min-width="121" min-height="76" alt="img" title="সিদ্ধ ডিম ফ্রিজে রেখে খাওয়া আর না খাওয়া একই কথা: এম এ আজিজ (ভিডিও)">
+	                      </picture>
+	                      <div class="card-video-icon transition"></div>
+	                    </div>
+	                  </div>
+	                  <div class="DetailsBlock">
+	                    <div class="Desc">
+	                      <h3 class="Title">সিদ্ধ ডিম ফ্রিজে রেখে খাওয়া আর না খাওয়া একই কথা: এম এ আজিজ (ভিডিও)</h3>
+	                      <span class="newsDate"><i class="far fa-clock"></i> আপডেট ৩০ আগস্ট  ২০২৩, ১০:৩৩</span>
+	                    </div>
+	                  </div>
+	                </a>
+	              </div>
+	              <div class="DCountryListItem">
+	                <a href="#">
+	                  <div class="DImgBlock">
+	                    <div class="DImgZoomBlock">
+	                      <picture><img loading="lazy" src="images/47.png" data-src=" " min-width="121" min-height="76" alt="img" title="ছোট কম্পনে বড় বিপর্যয়ের আভাস দিচ্ছে না তো?">
+	                      </picture>
+	                    </div>
+	                  </div>
+	                  <div class="DetailsBlock">
+	                    <div class="Desc">
+	                      <h3 class="Title">ছোট কম্পনে বড় বিপর্যয়ের আভাস দিচ্ছে না তো?</h3>
+	                      <span class="newsDate"><i class="far fa-clock"></i> আপডেট ৩০ আগস্ট  ২০২৩, ০৮:৫২</span>
+	                    </div>
+	                  </div>
+	                </a>
+	              </div>
+	              <div class="DCountryListItem">
+	                <a href="#">
+	                  <div class="DImgBlock">
+	                    <div class="DImgZoomBlock">
+	                      <picture><img loading="lazy" src="images/37.png" data-src=" " min-width="121" min-height="76" alt="img" title="ড.ইউনূসের পাশে দাঁড়াতে বিশ্বনেতাদের প্রতি হিলারি ক্লিনটনের আহ্বান">
+	                      </picture>
+	                    </div>
+	                  </div>
+	                  <div class="DetailsBlock">
+	                    <div class="Desc">
+	                      <h3 class="Title">ড.ইউনূসের পাশে দাঁড়াতে বিশ্বনেতাদের প্রতি হিলারি ক্লিনটনের আহ্বান</h3>
+	                      <span class="newsDate"><i class="far fa-clock"></i> আপডেট ৩০ আগস্ট  ২০২৩, ০৮:০১</span>
+	                    </div>
+	                  </div>
+	                </a>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </section>
+	  </div>
+	  <!-- banner section start here -->
+		<section class="banners OnlinePoll">
+			<img src="images/whatsapp-image-2023-05-04-at-145142-1683193093.jpeg" alt="banner">
+		</section>
+		<!-- nationality part end -->
+		<!-- national + online poll part start -->
+		<section class="National + Online Poll OnlinePoll">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 rowresize">
+                <div class="SPSecTitle">
+                    <a title="রাজনীতি" href="#">
+                        <h2>
+                            <img loading="lazy" src="https://backoffice.channel24bd.tv/media/common/favicon.ico" alt="" width="18" height="18" class="SPSecTitleIcon">রাজনীতি <i class="fa fa-angle-double-right"></i>
+                        </h2>
+                    </a>
+                    <li>
+                        <a title="আওয়ামী লীগ" href="#">আওয়ামী লীগ <i class="fa fa-angle-right"></i></a>
+                    </li>
+                    <li>
+                        <a title="বিএনপি" href="#">বিএনপি <i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a title="অন্যান্য" href="#">অন্যান্য <i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                </div>
+                <div class="DNational">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12 border-right-inner1">
+                            <div class="DNationalTop card-video-part">
+                                <a href="#">
+                                    <div class="DImgZoomBlock ">
+                                        <picture>
+                                            <img loading="lazy" src="https://backoffice.channel24bd.tv/media/imgAll/2023August/00047-1693411991.jpg" data-src=" " min-width="627" min-height="353" alt="img " title="কে এই চবি ছাত্রলীগের রাজু মুন্সি">
+                                        </picture>
+                                    </div>
+                                    <div class="Desc">
+                                        <h3 class="Title">কে এই চবি ছাত্রলীগের রাজু মুন্সি</h3>
+                                        <div class="Brief">
+                                            <p>চট্টগ্রাম বিশ্ববিদ্যালয়ের (চবি) ছাত্রলীগ নেতা রাজু মুন্সির বিরুদ্ধে &nbsp;বিভিন্ন সময় চাঁদাবাজি, শিক্ষককে হুমকিসহ নানা অভিযোগ রয়েছে। গত সোমবার (২৮ আগস্ট) চট্টগ্রাম বিশ্ববিদ্যালয়ের (চবি) প্রধান প্রকৌশলী সৈয়দ জাহাঙ্গীর ফজল ও নিরাপত্তা কর্মকর্তা শেখ মোহাম্মদ আব্দুর রাজ্জাককে মারধরের অভিযোগ উঠে শাখা ছাত্রলীগের যুগ্ম সম্পাদক রাজু মুন্সীর বিরুদ্ধে। এদিন ভিন্ন ভিন্ন সময় এসব ঘটনা ঘটে। এ নিয়ে বিশ্ববিদ্যালয়ের প্রকৌশল দপ্তরের কর্মকর্তা কর্মচারীরা বিচার ও নিরাপত্তা চেয়ে বিশ্ববিদ্যালয়ের রেজিস্ট্রার বরাবর লিখিত অভিযোগ দেয়।</p>
+                                        </div>
+                                        <span class="newsDate"><i class="far fa-clock"></i> আপডেট ৩০ আগস্ট  ২০২৩, ২২:১৩</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 border-right-inner1">
+							            <div class="DCountryList">
+							              <div class="DCountryListItem">
+							                <a href="#">
+							                  <div class="DImgBlock">
+							                    <div class="DImgZoomBlock">
+							                      <picture><img loading="lazy" src="images/2589-1693497518.jpg" data-src=" " min-width="121" min-height="76" alt="img" title=" "></picture>
+							                    </div>
+							                  </div>
+							                  <div class="DetailsBlock">
+							                    <div class="Desc">
+							                      <h3 class="Title">ড. ইউনূসের ওপর রাজনৈতিক নিপীড়নের প্রতিবাদে ঢাকায়...</h3>
+							                      <span class="newsDate"><i class="far fa-clock"></i> আপডেট ৩০ আগস্ট  ২০২৩, ১১:২৭</span>
+							                    </div>
+							                  </div>
+							                </a>
+							              </div>
+							              <div class="DCountryListItem">
+							                <a href="#">
+							                  <div class="DImgBlock">
+							                    <div class="DImgZoomBlock">
+							                      <picture><img loading="lazy" src="images/anisul-hk-1693497724.jpg" data-src="" min-width="121" min-height="76" alt="img" title=" ">
+							                      </picture>
+							                      <div class="card-video-icon transition"></div>
+							                    </div>
+							                  </div>
+							                  <div class="DetailsBlock">
+							                    <div class="Desc">
+							                      <h3 class="Title">কেউ আইনের ঊর্ধ্বে নয়, অপরাধ করলে তার বিচার হবে : আইনমন্ত্রী</h3>
+							                      <span class="newsDate"><i class="far fa-clock"></i> আপডেট ৩০ আগস্ট  ২০২৩, ১০:৩৩</span>
+							                    </div>
+							                  </div>
+							                </a>
+							              </div>
+							              <div class="DCountryListItem">
+							                <a href="#">
+							                  <div class="DImgBlock">
+							                    <div class="DImgZoomBlock">
+							                      <picture><img loading="lazy" src="images/45.png" data-src=" " min-width="121" min-height="76" alt="img" title=" ">
+							                      </picture>
+							                    </div>
+							                  </div>
+							                  <div class="DetailsBlock">
+							                    <div class="Desc">
+							                      <h3 class="Title">কেউ গরিবের অর্থ আত্মসাৎ করলে মামলা হবে না, প্রশ্ন কাদেরের</h3>
+							                      <span class="newsDate"><i class="far fa-clock"></i> আপডেট ৩০ আগস্ট  ২০২৩, ০৮:৫২</span>
+							                    </div>
+							                  </div>
+							                </a>
+							              </div>
+							              <div class="DCountryListItem">
+							                <a href="#">
+							                  <div class="DImgBlock">
+							                    <div class="DImgZoomBlock">
+							                      <picture><img loading="lazy" src="images/087-1693480949.jpg" data-src=" " min-width="121" min-height="76" alt="img" title=" ">
+							                      </picture>
+							                    </div>
+							                  </div>
+							                  <div class="DetailsBlock">
+							                    <div class="Desc">
+							                      <h3 class="Title">হেফাজতে ইসলামের ২১১ সদস্যের নতুন কমিটি ঘোষণা</h3>
+							                      <span class="newsDate"><i class="far fa-clock"></i> আপডেট ৩০ আগস্ট  ২০২৩, ০৮:০১</span>
+							                    </div>
+							                  </div>
+							                </a>
+							              </div>
+							            </div>
+							          </div>
+                        <div class="col-lg-3 col-sm-12 ">
+                        	 <div class="DCountryList">
+								              <div class="DCountryListItem">
+								                <a href="#">
+								                  <div class="DImgBlock">
+								                    <div class="DImgZoomBlock">
+								                      <picture><img loading="lazy" src="images/38.png" data-src=" " min-width="121" min-height="76" alt="img" title="শিক্ষক-দাতা সদস্যদের সঙ্গে ছাত্রীদের বিয়ে: কতটা ‘আইডিয়াল’ মতিঝিল আইডিয়াল স্কুল"></picture>
+								                    </div>
+								                  </div>
+								                  <div class="DetailsBlock">
+								                    <div class="Desc">
+								                      <h3 class="Title">শিক্ষক-দাতা সদস্যদের সঙ্গে ছাত্রীদের বিয়ে: কতটা ‘আইডিয়াল’ মতিঝিল আইডিয়াল স্কুল</h3>
+								                      <span class="newsDate"><i class="far fa-clock"></i> আপডেট ৩০ আগস্ট  ২০২৩, ১১:২৭</span>
+								                    </div>
+								                  </div>
+								                </a>
+								              </div>
+								              <div class="DCountryListItem gif">
+								                <a href="#">
+								                  <div class="DImgBlock">
+								                    <div class="DImgZoomBlock">
+								                      <picture><img loading="lazy" src="images/37.png" data-src=" " min-width="121" min-height="76" alt="img" title="ড.ইউনূসের পাশে দাঁড়াতে বিশ্বনেতাদের প্রতি হিলারি ক্লিনটনের আহ্বান">
+								                      </picture>
+								                    </div>
+								                  </div>
+								                  <div class="DetailsBlock">
+								                    <div class="Desc">
+								                      <h3 class="Title">ড.ইউনূসের পাশে দাঁড়াতে বিশ্বনেতাদের প্রতি হিলারি ক্লিনটনের আহ্বান</h3>
+								                      <span class="newsDate"><i class="far fa-clock"></i> আপডেট ৩০ আগস্ট  ২০২৩, ০৮:০১</span>
+								                    </div>
+								                  </div>
+								                </a>
+								              </div>
+								              <div class="bannners"><img src="images/10637568953336555517.gif" alt=""></div>
+								            </div>
+								          </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+		<!-- national + online poll part end -->
+
+		<!-- slider part start -->
+		<section class="OnlinePoll onli">
+			<div class="SPSecTitle">
+	        <a title="চ্যানেল 24 স্পেশাল" href="#">
+	          <h2><img loading="lazy" src="images/favicon.ico" alt="" width="18" height="18" class="SPSecTitleIcon">চ্যানেল 24 স্পেশাল</h2>
+	        </a>
+	    </div>
+	    <div class="slider slider-nav">
+		    <div>
+		    	<a href="#"><img src="images/56.png" alt=""></a>
+					<p>সিদ্ধ ডিম ফ্রিজে রেখে খাওয়া আর না খাওয়া একই কথা: এম এ আজিজ (ভিডিও)</p>
+		    </div>
+		    <div>
+		    	<a href="#"><img src="images/bnp-1693210015.jpg" alt=""></a>
+					<p>বিএনপিতে দলছুটের গুঞ্জন (ভিডিও)</p>
+		    </div>
+		    <div>
+		    	<a href="#"><img src="images/saudi-1693286148.jpg" alt=""></a>
+					<p>সৌদি আরবে পাড়ি জমিয়ে এখন দিশেহারা অনেক বাংলাদেশি (ভিডিও)</p>
+		    </div>
+		    <div>
+		    	<a href="#"><img src="images/44.png" alt=""></a>
+					<p>লাগামছাড়া বৃষ্টিতে ভিজছে ভাদ্রের দিন, আকস্মিক বন্যা ভোগাবে উত্তরাঞ্চলকে (ভিডিও)</p>
+		    </div>
+		    <div>
+		    	<a href="#"><img src="images/dollar-1693361936.jpg" alt=""></a>
+					<p>ডলার সংকটে বিপাকে আমদানি পণ্যের ব্যবসায়ীরা, বহু প্রতিষ্ঠান বন্ধের শঙ্কা (ভিডিও)</p>
+		    </div>
+	  	</div>
+			<!-- <div class="sliders">
+				<div class="mid">
+					<div class="pro-area">
+						<div class="row">
+						  <div class="columns">
+							<div class="all_items owl-carousel owl-theme">
+							  <div class="item">
+								<a href="#"><img src="images/aziz-1693370025 (1).webp" alt=""></a>
+								<p>সিদ্ধ ডিম ফ্রিজে রেখে খাওয়া আর না খাওয়া একই কথা: এম এ আজিজ (ভিডিও)</p>
+							  </div>
+							  <div class="item">
+								<a href="#"><img src="images/bnp-1693210015.jpg" alt=""></a>
+								<p>বিএনপিতে দলছুটের গুঞ্জন (ভিডিও)</p>
+							  </div>
+							  <div class="item">
+								<a href="#"><img src="images/saudi-1693286148.jpg" alt=""></a>
+								<p>সৌদি আরবে পাড়ি জমিয়ে এখন দিশেহারা অনেক বাংলাদেশি (ভিডিও)</p>
+							  </div>
+							  <div class="item">
+								<a href="#"><img src="images/chera-brrishtite-vijche-vadrer-din-aksmik-bnza-vogabe-uttranclke-1693273134.webp" alt=""></a>
+								<p>লাগামছাড়া বৃষ্টিতে ভিজছে ভাদ্রের দিন, আকস্মিক বন্যা ভোগাবে উত্তরাঞ্চলকে (ভিডিও)</p>
+							  </div>
+							  <div class="item">
+								<a href="#"><img src="images/nirvrta-kmche-na-pennyajer-amdanite-tan-prlei-kpal-pure-voktar-1693286377.jpg" alt=""></a>
+								<p>বিদেশ নির্ভরতা কমছে না পেঁয়াজের, আমদানিতে টান পড়লেই কপাল পুড়ে ভোক্তার (ভিডিও)</p>
+							  </div>
+							  <div class="item">
+								<a href="#"><img src="images/rohinga-1693448791.jpg" alt=""></a>
+								<p>সহায় সম্বলহীন রোহিঙ্গাদের হাতে হাতে এখন অস্ত্র (ভিডিও)</p>
+							  </div>
+							  <div class="item">
+								<a href="#"><img src="images/dollar-1693361936.jpg" alt=""></a>
+								<p>ডলার সংকটে বিপাকে আমদানি পণ্যের ব্যবসায়ীরা, বহু প্রতিষ্ঠান বন্ধের শঙ্কা (ভিডিও)</p>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		</section>
+		<!-- slider part end -->
+
+		<!-- sports part start -->
+		<section class="Sports OnlinePoll">
+    	<div class="SPSecTitle">
+        <a title="খেলা" href="#">
+            <h2>
+                <img loading="lazy" src="https://backoffice.channel24bd.tv/media/common/favicon.ico" alt="" width="18" height="18" class="SPSecTitleIcon">খেলা <i class="fa fa-angle-double-right"></i>
+            </h2>
+        </a>
+        <li>
+            <a title="ক্রিকেট" href="#">ক্রিকেট <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+        <li>
+            <a title="ফুটবল" href="#">ফুটবল <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+        <li>
+            <a title="অন্যান্য" href="#">অন্যান্য <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+	    </div>
+	    <div class="DSports">
+	        <div class="DSportsTop">
+	            <div class="row">
+	                <div class="col-lg-6 col-12 border-right-inner1 bright">
+	                    <div class="DSportsTopList">
+	                        <a href="#">
+	                            <div class="roww">
+	                                <div class="col-lg-8 coll-5">
+	                                    <div class="DImgZoomBlock">
+	                                        <picture>
+	                                            <img loading="lazy" src="https://backoffice.channel24bd.tv/media/imgAll/2023August/image-9-1693487240.jpg" data-src="https://backoffice.channel24bd.tv/media/imgAll/2023August/image-9-1693487240.jpg" min-width="409" min-height="253" alt="শান্তর লড়াকু ইনিংসেও বড় সংগ্রহ দাঁড় করাতে ব্যর্থ বাংলাদেশ" title="শান্তর লড়াকু ইনিংসেও বড় সংগ্রহ দাঁড় করাতে ব্যর্থ বাংলাদেশ">
+	                                        </picture>
+	                                    </div>
+	                                </div>
+	                                <div class="col-lg-4 coll-7">
+	                                    <div class="Desc">
+	                                        <h3 class="Title">শান্তর লড়াকু ইনিংসেও বড় সংগ্রহ দাঁড় করাতে ব্যর্থ বাংলাদেশ</h3>
+	                                        <div class="Brief">
+	                                            <p>এশিয়া কাপে নিজেদের প্রথম ম্যাচে শুরুটা ভালো হয়নি বাংলাদেশের। ব্যাটারদের ব্যর্থতায় বড় সংগ্রহ দাঁড় করাতে পারেনি টাইগাররা। একপ্রান্ত আগলে রেখে শান্ত ব্যাট হাতে লড়াই করে গেলেও তা বড় সংগ্রহের জন্য যথেষ্ট ছিল না। বাঁহাতি এই ব্যাটারের ৮৯ রানে ভর করে ৪২.৪ ওভারে ১৬৪ রানে গুটিয়ে যায় বাংলাদেশ।&nbsp;</p>
+	                                        </div><span class="newsDate"><i class="far fa-clock"></i> আপডেট ৩১ আগস্ট  ২০২৩, ১৯:০৭</span>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </a>
+	                    </div>
+	                </div>
+	                <div class="col-lg-6 col-12 ">
+	                    <div class="DSportsTopList">
+	                        <a href="#">
+	                            <div class="roww">
+	                                <div class="col-lg-8 coll-5">
+	                                    <div class="DImgZoomBlock">
+	                                        <picture>
+	                                            <img loading="lazy" src="https://backoffice.channel24bd.tv/media/imgAll/2023August/image-08-1693485785.jpg" data-src="https://backoffice.channel24bd.tv/media/imgAll/2023August/image-08-1693485785.jpg" min-width="409" min-height="253" alt="ম্যাচ চলাকালীন ফেসবুকে সাকিবের বিজ্ঞাপনী প্রচারণা!" title="ম্যাচ চলাকালীন ফেসবুকে সাকিবের বিজ্ঞাপনী প্রচারণা!">
+	                                        </picture>
+	                                    </div>
+	                                </div>
+	                                <div class="col-lg-4 coll-7">
+	                                    <div class="Desc">
+	                                        <h3 class="Title">ম্যাচ চলাকালীন ফেসবুকে সাকিবের বিজ্ঞাপনী প্রচারণা!</h3>
+	                                        <div class="Brief">
+	                                            <p>এশিয়া কাপে চলছে টাইগারদের ম্যাচ। নিজেদের প্রথম ম্যাচে শ্রীলঙ্কার বিপক্ষে লড়ছে বাংলাদেশ। লঙ্কানদের বিপক্ষে শুরুতেই তিন উইকেট হারিয়ে চাপে পড়ে টাইগাররা। সেই চাপ সামলিয়ে দলকে এগিয়ে নেয়ার দারুণ সুযোগ ছিল সাকিবের সামনে।</p>
+	                                        </div>
+	                                        <span class="newsDate"><i class="far fa-clock"></i> আপডেট ৩১ আগস্ট  ২০২৩, ১৮:৪৩</span>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </a>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="DSportsTop2">
+	            <div class="row">
+	                <div class="col-lg-3 col-12 d-flex border-right-inner1">
+	                    <div class="DSportsTop2List align-self-stretch">
+	                        <a href="#">
+	                            <div class="row">
+	                                <div class="col-lg-12 col-5">
+	                                    <div class="DImgZoomBlock">
+	                                        <picture>
+	                                            <img loading="lazy" src="https://backoffice.channel24bd.tv/media/imgAll/2023August/SM/image-07-1693483864.jpg" data-src="https://backoffice.channel24bd.tv/media/imgAll/2023August/SM/image-07-1693483864.jpg" min-width="299" min-height="167" alt="এশিয়া কাপের ইতিহাসে যা এবারই প্রথম" title="এশিয়া কাপের ইতিহাসে যা এবারই প্রথম">
+	                                        </picture>
+	                                    </div>
+	                                </div>
+	                                <div class="col-lg-12 col-7">
+	                                    <div class="Desc">
+	                                        <h3 class="Title">এশিয়া কাপের ইতিহাসে যা এবারই প্রথম</h3>
+	                                        <span class="newsDate"><i class="far fa-clock"></i> আপডেট ৩১ আগস্ট  ২০২৩, ১৮:১১</span>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </a>
+	                    </div>
+	                </div>
+	                <div class="col-lg-3 col-12 d-flex border-right-inner1">
+	                    <div class="DSportsTop2List align-self-stretch">
+	                        <a href="#">
+	                            <div class="row">
+	                                <div class="col-lg-12 col-5">
+	                                    <div class="DImgZoomBlock">
+	                                        <picture>
+	                                            <img loading="lazy" src="https://backoffice.channel24bd.tv/media/imgAll/2023August/SM/image-06-1693481563.jpg" data-src="https://backoffice.channel24bd.tv/media/imgAll/2023August/SM/image-06-1693481563.jpg" min-width="299" min-height="167" alt="শান্তর অর্ধ-শতক, হৃদয়ের সঙ্গে ৫০ রানের জুটি" title="শান্তর অর্ধ-শতক, হৃদয়ের সঙ্গে ৫০ রানের জুটি">
+	                                        </picture>
+	                                    </div>
+	                                </div>
+	                                <div class="col-lg-12 col-7">
+	                                    <div class="Desc">
+	                                        <h3 class="Title">শান্তর অর্ধ-শতক, হৃদয়ের সঙ্গে ৫০ রানের জুটি</h3>
+	                                        <span class="newsDate"><i class="far fa-clock"></i> আপডেট ৩১ আগস্ট  ২০২৩, ১৭:৩২</span>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </a>
+	                    </div>
+	                </div>
+	                <div class="col-lg-3 col-12 d-flex border-right-inner1">
+	                    <div class="DSportsTop2List align-self-stretch">
+	                        <a href="#">
+	                            <div class="row">
+	                                <div class="col-lg-12 col-5">
+	                                    <div class="DImgZoomBlock">
+	                                        <picture>
+	                                            <img loading="lazy" src="https://backoffice.channel24bd.tv/media/imgAll/2023August/SM/image-05-1693479960.jpg" data-src="https://backoffice.channel24bd.tv/media/imgAll/2023August/SM/image-05-1693479960.jpg" min-width="299" min-height="167" alt="চতুর্থবারের মতো বাংলাদেশের ওয়ানডেতে ঘটল এমন ঘটনা!" title="চতুর্থবারের মতো বাংলাদেশের ওয়ানডেতে ঘটল এমন ঘটনা!">
+	                                        </picture>
+	                                    </div>
+	                                </div>
+	                                <div class="col-lg-12 col-7">
+	                                    <div class="Desc">
+	                                        <h3 class="Title">চতুর্থবারের মতো বাংলাদেশের ওয়ানডেতে ঘটল এমন ঘটনা!</h3>
+	                                        <span class="newsDate"><i class="far fa-clock"></i> আপডেট ৩১ আগস্ট  ২০২৩, ১৭:০৬</span>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </a>
+	                    </div>
+	                </div>
+	                <div class="col-lg-3 col-12 d-flex ">
+	                    <div class="DSportsTop2List align-self-stretch">
+	                        <a href="#">
+	                            <div class="row">
+	                                <div class="col-lg-12 col-5">
+	                                    <div class="DImgZoomBlock">
+	                                        <picture>
+	                                            <img loading="lazy" src="https://backoffice.channel24bd.tv/media/imgAll/2023August/SM/image-04-1693478552.jpg" data-src="https://backoffice.channel24bd.tv/media/imgAll/2023August/SM/image-04-1693478552.jpg" min-width="299" min-height="167" alt="ফিরলেন সাকিবও, চাপে বাংলাদেশ" title="ফিরলেন সাকিবও, চাপে বাংলাদেশ">
+	                                        </picture>
+	                                    </div>
+	                                </div>
+	                                <div class="col-lg-12 col-7">
+	                                    <div class="Desc">
+	                                        <h3 class="Title">ফিরলেন সাকিবও, চাপে বাংলাদেশ</h3>
+	                                        <span class="newsDate"><i class="far fa-clock"></i> আপডেট ৩১ আগস্ট  ২০২৩, ১৬:৪২</span>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </a>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    	</div>
+		</section>
+		<!-- sports part end -->
+		 <!-- banner section start here -->
+		<section class="banners OnlinePoll">
+			<img src="images/whatsapp-image-2023-05-04-at-145142-1683193093.jpeg" alt="banner">
+		</section>
+			<!-- footer_address start -->
+			<section class="footer_address">
+	      <div class="containerr">
+	        <div class="footer_logo">
+	          <img src="images/logo.png" alt="logo">
+	        </div>
+	        <div class="footer_contact">
+	          <p>E-mail: channel24central@gmail.com</p>
+	          <p>Tel: +8802 550 29724</p>
+	          <p>Fax: +8802 550 19709</p>
+	          <p>Advertisement: digital@channel24bd.tv</p>
+	        </div>
+	        <div class="footer_address">
+	          <h4>সম্পাদক ও প্রকাশক:</h4>
+	          <p>টাইমস মিডিয়া ভবন (১০,১১ তলা), ৩৮৭ দক্ষিণ তেজগাঁও <br>বাণিজ্যিক এলাকা, ঢাকা ১২০৮, বাংলাদেশ।</p>
+	        </div>
+	      </div>
+	    </section>
+			<!-- footer_address end -->
+	<!-- 	footer area part start -->
+	<footer class="footer_part">
+	 	<p>© ২০২৩ | চ্যানেল ২৪ কর্তৃক সর্বসত্ব ® সংরক্ষিত |</p>
+	</footer>
+	<!-- 	footer area part end -->
+
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+	<script>
+	        // search-box open close js code
+	    let navbar = document.querySelector(".navbar");
+	    let searchBox = document.querySelector(".search-box .bx-search");
+	    // let searchBoxCancel = document.querySelector(".search-box .bx-x");
+
+	    	searchBox.addEventListener("click", ()=>{
+	      navbar.classList.toggle("showInput");
+	      if(navbar.classList.contains("showInput")){
+	        searchBox.classList.replace("bx-search" ,"bx-x");
+	      }else {
+	        searchBox.classList.replace("bx-x" ,"bx-search");
+	      }
+	    });
+
+	    // sidebar open close js code
+	    let navLinks = document.querySelector(".nav-links");
+	    let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+	    let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+	    menuOpenBtn.onclick = function() {
+	    navLinks.style.left = "0";
+	    }
+	    menuCloseBtn.onclick = function() {
+	    navLinks.style.left = "-100%";
+	    }
+
+
+	    // sidebar submenu open close js code
+	    let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+	    htmlcssArrow.onclick = function() {
+	     navLinks.classList.toggle("show1");
+	    }
+	    let moreArrow = document.querySelector(".mrore-arrow");
+	    moreArrow.onclick = function() {
+	     navLinks.classList.toggle("show5");
+	    }
+	    let jsArrow = document.querySelector(".js-arrow");
+	    jsArrow.onclick = function() {
+	     navLinks.classList.toggle("show3");
+	    }
+	    let jsArrrow = document.querySelector(".js-arrrow");
+	    jsArrrow.onclick = function() {
+	     navLinks.classList.toggle("show4");
+	    }
+	    let hhtmlcssArrrow = document.querySelector(".hhtmlcss-arrow");
+	    hhtmlcssArrrow.onclick = function() {
+	     navLinks.classList.toggle("show6");
+	    }
+
+  </script>
+
+  <script>
+		  	$('.slider-nav').slick({
+		   slidesToShow: 4,
+		   slidesToScroll: 1,
+		   dots: true,
+		   autoplay: true,
+		   autoplaySpeed: 2000,
+		   focusOnSelect: true,
+
+		   responsive: [
+		          {
+		            breakpoint: 1024,
+		            settings: {
+		              slidesToShow: 3,
+		              slidesToScroll: 2,
+		              infinite: true,
+		              dots: true
+		            }
+		          },
+		          {
+		            breakpoint: 600,
+		            settings: {
+		              slidesToShow: 2,
+		              slidesToScroll: 1,
+		              infinite: true,
+		              dots: true
+		            }
+		          },
+		          {
+		            breakpoint: 380,
+		            settings: {
+		              slidesToShow: 1,
+		              slidesToScroll: 1,
+
+		            }
+		          }
+		          
+		        ]
+
+		 });
+  </script>
+
+  <script>
+  	
+			$(window).scroll(function(){
+			    if ($(window).scrollTop() >= 300) {
+			        $('nav').addClass('fixed-header');
+			        $('nav div').addClass('visible-title');
+			    }
+			    else {
+			        $('nav').removeClass('fixed-header');
+			        $('nav div').removeClass('visible-title');
+			    }
+			});
+  </script>
+</body>
+</html>
